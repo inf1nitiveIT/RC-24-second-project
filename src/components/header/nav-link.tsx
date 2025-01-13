@@ -8,7 +8,7 @@ type NavLinkProps = {
 function NavLink({text, to}: NavLinkProps) {
   return(
     <li>
-      <Link to={to} className=''>
+      <Link to={to} className='text-lg'>
         {text}
       </Link>
     </li>
