@@ -4,7 +4,7 @@ import { PagesLinks } from '../../utils/const';
 function Logo() {
   return(
     <Link to={PagesLinks.MAIN}>
-      <p>Pairwise</p>
+      <p className='text-[#D4AF37] font-bold text-2xl'>Pairwise</p>
     </Link>
   );
 }

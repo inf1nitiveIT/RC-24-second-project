@@ -1,3 +1,5 @@
+const GAME_TIME = 60;
+
 const PagesLinks = {
   MAIN: '/',
   RULES: '/rules',
@@ -10,5 +12,10 @@ export const navigationLinks = [
   { id: 2, text: 'About', to: PagesLinks.ABOUT },
 ];
 
+const uniqueColors = [
+  'red', 'blue', 'green', 'yellow',
+  'orange', 'purple', 'pink', 'cyan'
+];
 
-export {PagesLinks};
+
+export {PagesLinks, uniqueColors, GAME_TIME};
