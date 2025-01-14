@@ -7,5 +7,7 @@ const shuffleArray = <T,>(array: T[]): T[] => {
   return result;
 };
 
+const getGridSizeForRound = (round: number): number => (round + 1) * 2;
 
-export {shuffleArray};
+
+export {shuffleArray, getGridSizeForRound};
