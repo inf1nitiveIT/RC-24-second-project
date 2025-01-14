@@ -1,17 +1,18 @@
 import { Helmet } from 'react-helmet-async';
 import Header from '../../components/header/header';
-import HeroSection from '../../components/hero-section/hero-section';
+import RulesSection from '../../components/rules-section/rules-section';
 
-function MainPage () {
+
+function RulesPage () {
   return(
     <>
       <Helmet>
-        <title>Pairwise</title>
+        <title>Rules</title>
       </Helmet>
       <Header />
-      <HeroSection />
+      <RulesSection />
     </>
   );
 }
 
-export default MainPage;
+export default RulesPage;
