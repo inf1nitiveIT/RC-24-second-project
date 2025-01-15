@@ -2,15 +2,14 @@
   "name": "rc-24-fisrt-project",
   "version": "14.0.0",
   "type": "module",
-  "homepage": "https://inf1nitiveIT.github.io/RC-24-second-project/",
+  "homepage": "https://inf1nitiveIT.github.io/RC-24-second-project",
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx",
     "preview": "vite preview",
     "test": "vitest --passWithNoTests",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "axios": "1.7.9",
