@@ -57,8 +57,8 @@ function MemoryGame() {
 
 
   useEffect(() => {
-    if (timeLeft <= 0) {
-      setIsTimeOverModalVisible(true);
+    if (isWinModalVisible || timeLeft <= 0) {
+      setIsTimeOverModalVisible(timeLeft <= 0);
       return;
     }
 
@@ -67,7 +67,7 @@ function MemoryGame() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [timeLeft]);
+  }, [timeLeft, isWinModalVisible]);
 
   useEffect(() => {
     const advanceRound = () => {
@@ -132,15 +132,17 @@ function MemoryGame() {
         <p>Round: <span className='text-[#D4AF37] font-bold'>{round + 1}</span> / 3</p>
         <p>Remaining time: <span className='text-[#D4AF37] font-bold'>{timeLeft}</span> seconds</p>
       </div>
-      <div className="grid gap-4 my-5"
+      <div className="grid gap-4 my-5 "
         style={{ gridTemplateColumns: `repeat(${(round + 1) * 2}, 1fr)` }}
       >
         {cards.map((card) => (
           <div
             key={card.id}
-            className="h-24 w-24 flex justify-center items-center cursor-pointer border-[1px] border-[#D4AF37] rounded"
+            className="flex justify-center items-center cursor-pointer border border-[#D4AF37] rounded"
             onClick={() => handleCardClick(card.id)}
             style={{
+              width: 'clamp(50px, 10vw, 100px)',
+              height: 'clamp(50px, 10vw, 100px)',
               backgroundColor: card.isFlipped || card.isMatched || isPreview ? card.color : '#1A1A1A',
             }}
           >

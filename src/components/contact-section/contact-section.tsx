@@ -4,7 +4,7 @@ import { PagesLinks } from '../../utils/const';
 
 function ContactSection() {
   return (
-    <div className="text-center p-6 border-2 rounded-3xl border-[#D4AF37] w-[800px] mx-auto text-white relative mt-3">
+    <div className="text-center border-2 rounded-3xl border-[#D4AF37] text-white max-w-[90%] lg:max-w-4xl md:max-w-lg mx-auto mt-3 p-4 md:p-6 relative">
       <Link to={PagesLinks.MAIN}>
         <button
           className="absolute top-2 right-2 text-white bg-[#1A1A1A] w-8 h-8 flex items-center justify-center rounded-full
@@ -21,7 +21,7 @@ function ContactSection() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
+              d="M6 18L18 6M6 6l12 12 "
             />
           </svg>
         </button>

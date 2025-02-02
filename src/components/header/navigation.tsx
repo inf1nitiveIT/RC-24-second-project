@@ -4,7 +4,7 @@ import { navigationLinks } from '../../utils/const';
 function Navigation() {
   return(
     <nav>
-      <ul className='flex gap-20'>
+      <ul className='flex gap-5 lg:gap-20'>
         {navigationLinks.map((link) =>
           <NavLink key={link.id} text={link.text} to={link.to} />
         )}

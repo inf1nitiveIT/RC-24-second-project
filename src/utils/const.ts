@@ -4,14 +4,10 @@ const ROUND_TIME_INCREMENT = 40;
 
 const uniqueColors = [
   'red', 'blue', 'green', 'yellow',
-  'orange', 'purple', 'pink', 'cyan',
-  'brown', 'lime', 'teal', 'maroon',
-  'navy', 'olive', 'coral', 'turquoise',
-  'lavender', 'indigo', 'violet', 'gold',
-  'silver', 'beige', 'peach', 'tan',
-  'aqua', 'salmon', 'chocolate', 'plum',
-  'crimson', 'ivory', 'azure', 'amber',
-  'mint', 'mustard', 'orchid', 'chartreuse'
+  'cyan', 'magenta', 'black', 'white',
+  'orange', 'purple', 'lime', 'teal',
+  'brown', 'pink', 'navy', 'gold',
+  'chartreuse', 'turquoise'
 ];
 
 const PagesLinks = {
