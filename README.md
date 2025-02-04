@@ -18,7 +18,7 @@
 ## 📦 Установка и запуск  
 
 ```sh
-git clone https://github.com/your-username/pairwise-game.git
-cd pairwise-game
+git clone https://github.com/inf1nitiveIT/RC-24-second-project.git
+cd RC-24-second-project
 npm install
 npm start  # Запуск игры (Vite)
