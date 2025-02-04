@@ -1,4 +1,4 @@
-import { FaTelegramPlane, FaVk, FaInstagram } from 'react-icons/fa'; // React icons for Telegram, VK, Instagram
+import { FaTelegramPlane, FaVk, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { PagesLinks } from '../../utils/const';
 
